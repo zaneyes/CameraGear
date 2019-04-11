@@ -1,8 +1,10 @@
 package com.example.xudongzhang.cameragear;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,5 +42,14 @@ public class MainActivity extends AppCompatActivity {
                         "Mount:  " + c.getString(6) + "\n" +
                         "Motor Type: " + c.getString(7) + "\n" +
                         "Filter Size: " + c.getDouble(8), Toast.LENGTH_LONG).show();
+    }
+
+    public void insertLens(final View view) {
+
+        final Intent intent;
+
+        intent = new Intent(this, InsertLensActivity.class);
+        startActivity(intent);
+
     }
 }
