@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         long id = db.insertLens("CANON", "Standard Zoom", "24-70", 2.8, 0.38, "EF", "USM", 82);
         db.close();
 
+
         db.open();
         Cursor c = db.getLens(1);
         if (c.moveToFirst())
