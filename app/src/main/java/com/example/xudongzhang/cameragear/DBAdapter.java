@@ -12,20 +12,20 @@ import android.util.Log;
 public class DBAdapter {
 
     //Constants for creating and updating the database
-    static final String KEY_ROWID           = "_id";
-    static final String KEY_BRANDNAME       = "brand_name";
-    static final String KEY_TYPE            = "type";
-    static final String KEY_FLENGTH         = "focal_length";
-    static final String KEY_APERTURE        = "max_aperture";
-    static final String KEY_CFDISTANCE      = "closest_focusing_distance";
-    static final String KEY_MOUNT           = "mount";
-    static final String KEY_MOTORTYPE       = "motor_type";
-    static final String KEY_FILTERSIZE      = "filter_size";
-    static final String TAG                 = "DBAdapter";
+    public static final String KEY_ROWID           = "_id";
+    public static final String KEY_BRANDNAME       = "brand_name";
+    public static final String KEY_TYPE            = "type";
+    public static final String KEY_FLENGTH         = "focal_length";
+    public static final String KEY_APERTURE        = "max_aperture";
+    public static final String KEY_CFDISTANCE      = "closest_focusing_distance";
+    public static final String KEY_MOUNT           = "mount";
+    public static final String KEY_MOTORTYPE       = "motor_type";
+    public static final String KEY_FILTERSIZE      = "filter_size";
+    public static final String TAG                 = "DBAdapter";
 
-    static final String DATABASE_NAME       = "CameraGears";
-    static final String DATABASE_TABLE      = "lenses";
-    static final int    DATABASE_VERSION    = 1;
+    public static final String DATABASE_NAME       = "CameraGears";
+    public static final String DATABASE_TABLE      = "lenses";
+    public static final int    DATABASE_VERSION    = 1;
 
 //    static final String DATABASE_CREATE     =
 //            "create table " + DATABASE_TABLE + " (" + KEY_ROWID + " integer primary key autoincrement, "

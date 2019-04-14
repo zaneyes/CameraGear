@@ -7,86 +7,92 @@
     tools:context=".InsertLensActivity">
 
     <TextView
-        android:id="@+id/textViewBrandName3"
+        android:id="@+id/textViewFilterSize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:text="Brand Name"
-        app:layout_constraintEnd_toStartOf="@+id/editTextBrandName3"
+        android:layout_marginTop="8dp"
+        android:text="Filter Size"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextFilterSize"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBrandName4" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMotorType" />
 
     <TextView
-        android:id="@+id/textViewBrandName4"
+        android:id="@+id/textViewMotorType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:text="Brand Name"
-        app:layout_constraintEnd_toStartOf="@+id/editTextBrandName4"
+        android:layout_marginTop="28dp"
+        android:text="Motor Type"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextMotorType"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBrandName5" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMount" />
 
     <TextView
-        android:id="@+id/textViewBrandName5"
+        android:id="@+id/textViewMount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:text="Brand Name"
-        app:layout_constraintEnd_toStartOf="@+id/editTextBrandName5"
+        android:layout_marginTop="8dp"
+        android:text="Mount Type"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextMountType"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBrandName6" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewCFDistance" />
 
     <TextView
-        android:id="@+id/textViewBrandName6"
-        android:layout_width="76dp"
-        android:layout_height="18dp"
+        android:id="@+id/textViewCFDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:text="Brand Name"
-        app:layout_constraintEnd_toStartOf="@+id/editTextBrandName5"
+        android:layout_marginTop="48dp"
+        android:text="C.F. Distance"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCFDistance"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBrandName7" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMaxAperture" />
 
     <TextView
-        android:id="@+id/textViewBrandName7"
+        android:id="@+id/textViewMaxAperture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Max Aperture"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextMaxAperture"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFovalLength" />
+
+    <TextView
+        android:id="@+id/textViewFovalLength"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:text="Brand Name"
-        app:layout_constraintEnd_toStartOf="@+id/editTextBrandName6"
+        android:layout_marginTop="8dp"
+        android:text="Focal Length"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextFocalLength"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBrandName8" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewType" />
 
     <TextView
-        android:id="@+id/textViewBrandName8"
+        android:id="@+id/textViewType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:text="Brand Name"
-        app:layout_constraintEnd_toStartOf="@+id/editTextBrandName7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBrandName9" />
-
-    <TextView
-        android:id="@+id/textViewBrandName9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:text="Brand Name"
-        app:layout_constraintEnd_toStartOf="@+id/editTextBrandName8"
+        android:layout_marginTop="44dp"
+        android:text="Lens Type"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextLensType"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBrandName" />
 
@@ -94,124 +100,156 @@
         android:id="@+id/textViewBrandName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Brand Name"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/editTextBrandName"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextBrandName"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginTop="35dp"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewBrandName"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextBrandName2"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextBrandName3" />
-
-    <EditText
-        android:id="@+id/editTextBrandName3"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextBrandName4" />
-
-    <EditText
-        android:id="@+id/editTextBrandName4"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextBrandName5" />
-
-    <EditText
-        android:id="@+id/editTextBrandName5"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextBrandName6" />
-
-    <EditText
-        android:id="@+id/editTextBrandName6"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextBrandName7" />
-
-    <EditText
-        android:id="@+id/editTextBrandName7"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextBrandName8" />
-
-    <EditText
-        android:id="@+id/editTextBrandName8"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextBrandName" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextMotorType"
+        android:layout_width="196dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="TextView"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingTop="5dp"
+        android:text="Name"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewMotorType"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMountType" />
+
+    <EditText
+        android:id="@+id/editTextMountType"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewMount"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCFDistance" />
+
+    <EditText
+        android:id="@+id/editTextFocalLength"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewFovalLength"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLensType" />
+
+    <EditText
+        android:id="@+id/editTextLensType"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewType"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBrandName" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="saveLens"
+        android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextBrandName2"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBrandName3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMaxAperture"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewMaxAperture"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFocalLength" />
+
+    <EditText
+        android:id="@+id/editTextCFDistance"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewCFDistance"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMaxAperture" />
+
+    <EditText
+        android:id="@+id/editTextFilterSize"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewFilterSize"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMotorType" />
+
 </android.support.constraint.ConstraintLayout>
