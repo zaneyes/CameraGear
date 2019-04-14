@@ -56,14 +56,46 @@ public class InsertLensActivity extends AppCompatActivity {
         motorTypeInput      = (EditText) findViewById(R.id.editTextMotorType);
         filterSizeInput     = (EditText) findViewById(R.id.editTextFilterSize);
 
-        com.example.xudongzhang.camgear.DBAdapter db = new com.example.xudongzhang.camgear.DBAdapter(this);
+        if(brandInput.getText().toString().matches("")) {
+            Toast.makeText(this, "You didn't enter the brand name of the lens", Toast.LENGTH_SHORT).show();
+            return;
+        }else if(lensTypeInput.getText().toString().matches("")) {
+            Toast.makeText(this, "You didn't enter the type of the lens", Toast.LENGTH_SHORT).show();
+        }else if(focalLengthInput.getText().toString().matches("")) {
+            Toast.makeText(this, "You didn't enter the focal length of the lens", Toast.LENGTH_SHORT).show();
+        }else if(maxApertureInput.getText().toString().matches("")) {
+            Toast.makeText(this, "You didn't enter the max aperture of the lens", Toast.LENGTH_SHORT).show();
+        }else if(cfDistanceInput.getText().toString().matches("")) {
+            Toast.makeText(this, "You didn't enter the closest focus distance of the lens", Toast.LENGTH_SHORT).show();
+        }else if(mountTypeInput.getText().toString().matches("")) {
+            Toast.makeText(this, "You didn't enter the mount type of the lens", Toast.LENGTH_SHORT).show();
+        }else if(motorTypeInput.getText().toString().matches("")) {
+            Toast.makeText(this, "You didn't enter the motor type of the lens", Toast.LENGTH_SHORT).show();
+        }else if(filterSizeInput.getText().toString().matches("")) {
+            Toast.makeText(this, "You didn't enter the filter size of the lens", Toast.LENGTH_SHORT).show();
+        }else {
 
-        db.open();
-        long id = db.insertLens(brandInput.getText().toString(), lensTypeInput.getText().toString(), focalLengthInput.getText().toString(),
-                                Double.valueOf(maxApertureInput.getText().toString()), Double.valueOf(cfDistanceInput.getText().toString()),
-                                mountTypeInput.getText().toString(), motorTypeInput.getText().toString(),
-                                Double.valueOf(filterSizeInput.getText().toString()));
-        db.close();
+            com.example.xudongzhang.camgear.DBAdapter db = new com.example.xudongzhang.camgear.DBAdapter(this);
+
+            db.open();
+            long id = db.insertLens(brandInput.getText().toString(), lensTypeInput.getText().toString(), focalLengthInput.getText().toString(),
+                    Double.valueOf(maxApertureInput.getText().toString()), Double.valueOf(cfDistanceInput.getText().toString()),
+                    mountTypeInput.getText().toString(), motorTypeInput.getText().toString(),
+                    Double.valueOf(filterSizeInput.getText().toString()));
+            db.close();
+
+            Toast.makeText(this, "Save Successful.", Toast.LENGTH_LONG).show();
+
+            brandInput.getText().clear();
+            lensTypeInput.getText().clear();
+            focalLengthInput.getText().clear();
+            maxApertureInput.getText().clear();
+            cfDistanceInput.getText().clear();
+            mountTypeInput.getText().clear();
+            motorTypeInput.getText().clear();
+            filterSizeInput.getText().clear();
+        }
+
 
 
 

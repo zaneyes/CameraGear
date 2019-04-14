@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,11 +18,15 @@ import java.util.ArrayList;
 public class ViewLensesActivity extends AppCompatActivity {
 
     private TextView lensLabel;
+    private EditText idDelete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_lenses);
+
+        idDelete = (EditText) findViewById(R.id.editTextDelete);
+
 
         com.example.xudongzhang.camgear.DBAdapter db = new com.example.xudongzhang.camgear.DBAdapter(this);
 
@@ -32,6 +37,26 @@ public class ViewLensesActivity extends AppCompatActivity {
         else
             Toast.makeText(this, "No lens found", Toast.LENGTH_LONG).show();
         db.close();
+    }
+
+    public void deleteById(View view) {
+
+        if(idDelete.getText().toString().matches("")) {
+            Toast.makeText(this, "Please enter an id number for deletion", Toast.LENGTH_LONG).show();
+        }else {
+
+            com.example.xudongzhang.camgear.DBAdapter db = new com.example.xudongzhang.camgear.DBAdapter(this);
+
+            db.open();
+            if (db.deleteLens(Long.parseLong(idDelete.getText().toString())))
+                Toast.makeText(this, "Delete Successful.", Toast.LENGTH_LONG).show();
+            else
+                Toast.makeText(this, "Delete failed.", Toast.LENGTH_LONG).show();
+            db.close();
+
+
+            idDelete.getText().clear();
+        }
 
     }
 
@@ -70,22 +95,6 @@ public class ViewLensesActivity extends AppCompatActivity {
           for (int i = 0; i < allLensesArrayList.size(); i++) {
               lensLabel.append(newLine + allLensesArrayList.get(i).toString());
           }
-
-
-
-
-//            lensLabel.setText("id: " + c.getString(0) + "\n" +
-//                    "Brand Name: " + c.getString(1) + "\n" +
-//                    "Lens Type:  " + c.getString(2) + "\n" +
-//                    "Focal Length: " + c.getString(3) + "\n" +
-//                    "Max Aperture: " + c.getDouble(4) + "\n" +
-//                    "Closest Focus Distance: " + c.getDouble(5) + "\n" +
-//                    "Mount:  " + c.getString(6) + "\n" +
-//                    "Motor Type: " + c.getString(7) + "\n" +
-//                    "Filter Size: " + c.getDouble(8));
-
-
-
 
     }
 }
